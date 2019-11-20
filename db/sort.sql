@@ -1,3 +1,4 @@
+use youke;
 create table FirstClass
 (
    id                   int not null,

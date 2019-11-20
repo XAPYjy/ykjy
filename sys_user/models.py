@@ -225,5 +225,33 @@ class UserOrder(models.Model):
         db_table = 'user_order'
 
 
+class YkRotation(models.Model):
+    yk_is_rotation = models.IntegerField()
+
+    class Meta:
+        managed = False
+        db_table = 'yk_rotation'
 
 
+class YkRecommend(models.Model):
+    yk_lesson_type = models.CharField(max_length=200)
+    yk_lesson_jump_link = models.CharField(max_length=200)
+
+    class Meta:
+        managed = False
+        db_table = 'yk_recommend'
+
+
+class YkDiscuss(models.Model):
+    id = models.IntegerField(primary_key=True)
+    yk_user_id = models.IntegerField()
+    yk_discuss_contents = models.CharField(max_length=100)
+    yk_discuss_date = models.DateTimeField()
+    yk_discuss_outdate = models.DateTimeField()
+    yk_discuss_click_num = models.IntegerField(blank=True, null=True)
+    yk_lesson_id = models.IntegerField()
+    yk_discuss_authority = models.IntegerField()
+
+    class Meta:
+        managed = False
+        db_table = 'yk_discuss'

@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'sys_user',
 ]
 
 MIDDLEWARE = [
@@ -74,10 +75,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME':'youke',
-        'HOST':'localhost',
+        'HOST':'47.92.132.161',
         'PORT':3306,
         'USER':'root',
-        'PASSWORD':'123456',
+        'PASSWORD':'root',
         'CHARSET':'utf8'
     }
 }

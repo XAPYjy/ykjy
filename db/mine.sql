@@ -2,7 +2,7 @@
 /* DBMS name:      MySQL 5.0                                    */
 /* Created on:     2019/11/19 21:45:36                          */
 /*==============================================================*/
-
+use youke;
 
 drop table if exists billing_details;
 

@@ -1,4 +1,3 @@
-create DATABASE youke CHARSET utf8;
 use youke;
 
 -- 创建系统用户表

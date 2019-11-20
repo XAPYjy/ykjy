@@ -3,7 +3,7 @@
 /* Created on:     2019/11/20 8:48:51                           */
 /*==============================================================*/
 
-
+use youke;
 drop table if exists yk_discuss;
 
 drop table if exists yk_lesson;
@@ -44,8 +44,8 @@ create table yk_lesson
    yk_lesson_contents   varchar(50) not null,
    yk_lesson_contents_mark int not null,
    yk_lesson_img        varchar(200) not null,
-   yk_rotaion_id        int not null,
-   yk_recommend_id      int not null,
+   yk_rotaion_id        int ,
+   yk_recommend_id      int ,
    yk_lesson_price_type varchar(50) not null,
    yk_lesson_dis_price  float,
    yk_lesson_list       int not null,
