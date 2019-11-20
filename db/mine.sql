@@ -80,7 +80,7 @@ create table mycourse
 /*==============================================================*/
 /* Table: "order"                                               */
 /*==============================================================*/
-create table order
+create table user_order
 (
    id                   int not null auto_increment,
    yk_goods_id          int,
