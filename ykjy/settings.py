@@ -35,7 +35,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'sys_user',
 ]
 
 MIDDLEWARE = [
@@ -82,9 +81,6 @@ DATABASES = {
         'CHARSET':'utf8'
     }
 }
-
-# Internationalization
-# https://docs.djangoproject.com/en/2.2/topics/i18n/
 
 LANGUAGE_CODE = 'zh-Hans'
 
